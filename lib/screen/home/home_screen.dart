@@ -37,6 +37,16 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           IconButton(
             onPressed: () {
+              Navigator.pushNamed(context, 'bill');
+            },
+            icon: const Icon(
+              Icons.copy,
+              color: Colors.white,
+              size: 25,
+            ),
+          ),
+          IconButton(
+            onPressed: () {
               Navigator.pushNamed(
                 context,
                 'person',
